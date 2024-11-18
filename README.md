@@ -1,11 +1,11 @@
 # On MacOS:
 
-1. Give permission: chmod +x ./setup.sh
-2. Run this command: ./setup.sh
+1. Give permission: `chmod +x ./setup.sh`
+2. Run this command: `./setup.sh`
 
 # On WindowsOS
 
-1. Run this command: ./setup.bat
+1. Run this command: `./setup.bat`
 
 # Versions
 
