@@ -83,11 +83,10 @@ class CSVUploadView(APIView):
                 dtypes_before = df.dtypes.astype(str).to_dict() # Data types before conversion 
                 df = infer_and_convert_data_types(df) 
                 dtypes_after = df.dtypes.astype(str).to_dict() # Data types after conversion
-                first_two_lines = df.head(2).to_dict(orient='records')
+                
                 response_data = { 
                     'dtypes_before': dtypes_before, 
-                    'dtypes_after': dtypes_after,
-                    'first_two_lines': first_two_lines
+                    'dtypes_after': dtypes_after
                 }
                 return Response(response_data, status=status.HTTP_200_OK)
             except Exception as e:
