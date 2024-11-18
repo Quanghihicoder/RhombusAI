@@ -10,5 +10,7 @@
 # Versions
 
 python 3.11.5
+
 npm version 10.8.3
+
 node version 22.9.0
